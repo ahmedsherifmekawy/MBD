@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'GradSys'.
  *
- * Model version                  : 1.4
+ * Model version                  : 1.5
  * Simulink Coder version         : 8.10 (R2016a) 10-Feb-2016
- * C/C++ source code generated on : Tue Feb 22 11:27:47 2022
+ * C/C++ source code generated on : Wed Feb 23 11:21:31 2022
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -16,7 +16,6 @@
 #ifndef RTW_HEADER_GradSys_h_
 #define RTW_HEADER_GradSys_h_
 #include <stddef.h>
-#include <string.h>
 #ifndef GradSys_COMMON_INCLUDES_
 # define GradSys_COMMON_INCLUDES_
 #include "rtwtypes.h"
@@ -41,10 +40,6 @@ typedef struct {
 /* External outputs (root outports fed by signals with auto storage) */
 typedef struct {
   uint8_T Out1;                        /* '<Root>/Out1' */
-  uint8_T Out2;                        /* '<Root>/Out2' */
-  uint8_T Out3;                        /* '<Root>/Out3' */
-  uint8_T Out4;                        /* '<Root>/Out4' */
-  uint8_T Out5;                        /* '<Root>/Out5' */
 } ExtY_GradSys_T;
 
 /* Real-time Model Data Structure */

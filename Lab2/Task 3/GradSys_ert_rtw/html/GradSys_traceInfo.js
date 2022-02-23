@@ -1,54 +1,30 @@
 function RTW_Sid2UrlHash() {
 	this.urlHashMap = new Array();
 	/* <Root>/In1 */
-	this.urlHashMap["GradSys:1"] = "GradSys.c:33&GradSys.h:38";
+	this.urlHashMap["GradSys:1"] = "GradSys.c:36&GradSys.h:37";
 	/* <Root>/If */
-	this.urlHashMap["GradSys:5"] = "GradSys.c:32,87";
+	this.urlHashMap["GradSys:5"] = "msg=rtwMsg_CodeGenerationReducedBlock&block=GradSys:5";
 	/* <Root>/If Action
 Subsystem */
-	this.urlHashMap["GradSys:6"] = "GradSys.c:76,84";
+	this.urlHashMap["GradSys:6"] = "msg=rtwMsg_CodeGenerationReducedBlock&block=GradSys:6";
 	/* <Root>/If Action
 Subsystem1 */
-	this.urlHashMap["GradSys:12"] = "GradSys.c:36,44";
+	this.urlHashMap["GradSys:12"] = "GradSys.c:32,40";
 	/* <Root>/If Action
 Subsystem2 */
-	this.urlHashMap["GradSys:39"] = "GradSys.c:46,54";
+	this.urlHashMap["GradSys:39"] = "msg=rtwMsg_CodeGenerationReducedBlock&block=GradSys:39";
 	/* <Root>/If Action
 Subsystem3 */
-	this.urlHashMap["GradSys:43"] = "GradSys.c:56,64";
+	this.urlHashMap["GradSys:43"] = "msg=rtwMsg_CodeGenerationReducedBlock&block=GradSys:43";
 	/* <Root>/If Action
 Subsystem4 */
-	this.urlHashMap["GradSys:47"] = "GradSys.c:66,74";
+	this.urlHashMap["GradSys:47"] = "msg=rtwMsg_CodeGenerationReducedBlock&block=GradSys:47";
+	/* <Root>/Merge */
+	this.urlHashMap["GradSys:55"] = "msg=rtwMsg_CodeGenerationReducedBlock&block=GradSys:55";
 	/* <Root>/Out1 */
-	this.urlHashMap["GradSys:2"] = "GradSys.c:39&GradSys.h:43";
-	/* <Root>/Out2 */
-	this.urlHashMap["GradSys:51"] = "GradSys.c:49&GradSys.h:44";
-	/* <Root>/Out3 */
-	this.urlHashMap["GradSys:52"] = "GradSys.c:59&GradSys.h:45";
-	/* <Root>/Out4 */
-	this.urlHashMap["GradSys:53"] = "GradSys.c:69&GradSys.h:46";
-	/* <Root>/Out5 */
-	this.urlHashMap["GradSys:54"] = "GradSys.c:79&GradSys.h:47";
-	/* <S1>/In1 */
-	this.urlHashMap["GradSys:7"] = "GradSys.c:80";
-	/* <S1>/Action Port */
-	this.urlHashMap["GradSys:8"] = "GradSys.c:77";
-	/* <S2>/In1 */
-	this.urlHashMap["GradSys:13"] = "GradSys.c:40";
+	this.urlHashMap["GradSys:2"] = "GradSys.c:35&GradSys.h:42";
 	/* <S2>/Action Port */
-	this.urlHashMap["GradSys:14"] = "GradSys.c:37";
-	/* <S3>/In1 */
-	this.urlHashMap["GradSys:40"] = "GradSys.c:50";
-	/* <S3>/Action Port */
-	this.urlHashMap["GradSys:41"] = "GradSys.c:47";
-	/* <S4>/In1 */
-	this.urlHashMap["GradSys:44"] = "GradSys.c:60";
-	/* <S4>/Action Port */
-	this.urlHashMap["GradSys:45"] = "GradSys.c:57";
-	/* <S5>/In1 */
-	this.urlHashMap["GradSys:48"] = "GradSys.c:70";
-	/* <S5>/Action Port */
-	this.urlHashMap["GradSys:49"] = "GradSys.c:67";
+	this.urlHashMap["GradSys:14"] = "GradSys.c:33";
 	this.getUrlHash = function(sid) { return this.urlHashMap[sid];}
 }
 RTW_Sid2UrlHash.instance = new RTW_Sid2UrlHash();
@@ -81,16 +57,10 @@ function RTW_rtwnameSIDMap() {
 	this.sidHashMap["GradSys:43"] = {rtwname: "<Root>/If Action Subsystem3"};
 	this.rtwnameHashMap["<Root>/If Action Subsystem4"] = {sid: "GradSys:47"};
 	this.sidHashMap["GradSys:47"] = {rtwname: "<Root>/If Action Subsystem4"};
+	this.rtwnameHashMap["<Root>/Merge"] = {sid: "GradSys:55"};
+	this.sidHashMap["GradSys:55"] = {rtwname: "<Root>/Merge"};
 	this.rtwnameHashMap["<Root>/Out1"] = {sid: "GradSys:2"};
 	this.sidHashMap["GradSys:2"] = {rtwname: "<Root>/Out1"};
-	this.rtwnameHashMap["<Root>/Out2"] = {sid: "GradSys:51"};
-	this.sidHashMap["GradSys:51"] = {rtwname: "<Root>/Out2"};
-	this.rtwnameHashMap["<Root>/Out3"] = {sid: "GradSys:52"};
-	this.sidHashMap["GradSys:52"] = {rtwname: "<Root>/Out3"};
-	this.rtwnameHashMap["<Root>/Out4"] = {sid: "GradSys:53"};
-	this.sidHashMap["GradSys:53"] = {rtwname: "<Root>/Out4"};
-	this.rtwnameHashMap["<Root>/Out5"] = {sid: "GradSys:54"};
-	this.sidHashMap["GradSys:54"] = {rtwname: "<Root>/Out5"};
 	this.rtwnameHashMap["<S1>/In1"] = {sid: "GradSys:7"};
 	this.sidHashMap["GradSys:7"] = {rtwname: "<S1>/In1"};
 	this.rtwnameHashMap["<S1>/Action Port"] = {sid: "GradSys:8"};
